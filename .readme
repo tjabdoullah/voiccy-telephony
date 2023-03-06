@@ -1,0 +1,11 @@
+#To run the docker image
+docker run --publish 5060:5060 ubuntu /bin/bash
+docker exec -it distracted_stonebraker /bin/bash
+
+apt-get update
+apt-get upgrade
+apt-get install asterisk
+apt-get install node
+apt-get install nodejs
+apt-get install npm
+apt-get install git

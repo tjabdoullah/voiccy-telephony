@@ -1,0 +1,19 @@
+{
+  "name": "voiccy-telephony",
+  "version": "1.0.0",
+  "description": "",
+  "main": "initiator.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tjabdoullah/voiccy-telephony.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tjabdoullah/voiccy-telephony/issues"
+  },
+  "homepage": "https://github.com/tjabdoullah/voiccy-telephony#readme"
+}
