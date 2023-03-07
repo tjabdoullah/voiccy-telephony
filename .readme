@@ -12,6 +12,8 @@ apt-get install nano -y
 apt-get install git -y
 
 pwd && git clone https://github.com/tjabdoullah/voiccy-telephony.git
+cd voiccy-telephony && npm install
+npm streamer.js
 rm -f /etc/asterisk/sip.conf && rm -f /etc/asterisk/pjsip.conf && rm -f /etc/asterisk/manager.conf
 
 nano /etc/asterisk/pjsip.conf
