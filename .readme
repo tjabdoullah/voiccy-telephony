@@ -1,11 +1,22 @@
 #To run the docker image
-docker run --publish 5060:5060 ubuntu /bin/bash
-docker exec -it distracted_stonebraker /bin/bash
+docker run -p 5060:5060 -p 5060:5060/udp -p 5061:5061 -dit ubuntu /bin/bash
+docker exec -it <name> /bin/bash
 
-apt-get update
-apt-get upgrade
-apt-get install asterisk
-apt-get install node
-apt-get install nodejs
-apt-get install npm
-apt-get install git
+
+
+apt-get update -y
+apt-get upgrade -y
+apt-get install asterisk -y
+apt-get install node -y
+apt-get install nodejs -y
+apt-get install npm -y
+apt-get install nano -y
+apt-get install git -y
+
+rm -f /etc/asterisk/sip.conf
+rm -f /etc/asterisk/pjsip.conf
+rm -f /etc/asterisk/manager.conf
+
+nano /etc/asterisk/pjsip.conf
+nano /etc/asterisk/sip.conf
+nano /etc/asterisk/manager.conf
