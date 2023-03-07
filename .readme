@@ -2,8 +2,6 @@
 docker run -p 5060:5060 -p 5060:5060/udp -p 5061:5061 -dit ubuntu /bin/bash
 docker exec -it <name> /bin/bash
 
-
-
 apt-get update -y
 apt-get upgrade -y
 apt-get install asterisk -y
@@ -13,9 +11,8 @@ apt-get install npm -y
 apt-get install nano -y
 apt-get install git -y
 
-rm -f /etc/asterisk/sip.conf
-rm -f /etc/asterisk/pjsip.conf
-rm -f /etc/asterisk/manager.conf
+pwd && git clone https://github.com/tjabdoullah/voiccy-telephony.git
+rm -f /etc/asterisk/sip.conf && rm -f /etc/asterisk/pjsip.conf && rm -f /etc/asterisk/manager.conf
 
 nano /etc/asterisk/pjsip.conf
 nano /etc/asterisk/sip.conf
