@@ -1,6 +1,13 @@
 #To run the docker image
-docker run -p 5060:5060 -p 5060:5060/udp -p 5061:5061 -dit ubuntu /bin/bash
-docker exec -it <name> /bin/bash
+docker run --network host -dit ubutnu /bin/bash
+
+docker run --network host -dit mlan/asterisk /bin/bash
+docker run -p 5900:5900 -p 3389:3389 -p 5060:5060/tcp -p 5060:5060/udp -p 5061:5061 -p 5080:5080/tcp -p 5080:5080/udp -p 8021:8021/tcp -p 7443:7443/tcp -p 10000-10099:10000-10099/udp -dit ubuntu /bin/bash
+docker exec -it great_chaplygin /bin/bash
+
+
+Instead of using docker, I am using multipass, it has no ports issue and gets DTMFs easily:
+1https://medium.com/@paulrobu/how-to-run-ubuntu-22-04-vms-on-apple-m1-arm-based-systems-for-free-c8283fb38309
 
 apt-get update -y
 apt-get upgrade -y
@@ -11,11 +18,12 @@ apt-get install npm -y
 apt-get install nano -y
 apt-get install git -y
 
-pwd && git clone https://github.com/tjabdoullah/voiccy-telephony.git
+cd && git clone https://github.com/tjabdoullah/voiccy-telephony.git
 cd voiccy-telephony && npm install
-npm streamer.js
-rm -f /etc/asterisk/sip.conf && rm -f /etc/asterisk/pjsip.conf && rm -f /etc/asterisk/manager.conf
+node streamer.js
+rm -f /etc/asterisk/sip.conf && rm -f /etc/asterisk/pjsip.conf && rm -f /etc/asterisk/manager.conf && rm -f /etc/asterisk/extensions.conf
 
 nano /etc/asterisk/pjsip.conf
 nano /etc/asterisk/sip.conf
 nano /etc/asterisk/manager.conf
+nano /etc/asterisk/extensions.conf
