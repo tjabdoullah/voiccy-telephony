@@ -9,6 +9,11 @@ docker exec -it great_chaplygin /bin/bash
 Instead of using docker, I am using multipass, it has no ports issue and gets DTMFs easily:
 1https://medium.com/@paulrobu/how-to-run-ubuntu-22-04-vms-on-apple-m1-arm-based-systems-for-free-c8283fb38309
 
+-- this will record the mentioned file
+same = n,Record(21032023.wav,5,5)
+-- here
+/usr/share/asterisk/sounds
+
 apt-get update -y
 apt-get upgrade -y
 apt-get install asterisk -y
