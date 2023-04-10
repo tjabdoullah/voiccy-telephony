@@ -40,7 +40,7 @@ var handler = function (context) {
       // var input = await context.recordFile("22032023", "wav", 5, 5);
       var input = await getUserInput(
         context,
-        "voiccy/insurance_about_to_expire_1_to_know_more_2_to_oup_out",
+        "voiccy/greetings",
         5,
         1,
         3

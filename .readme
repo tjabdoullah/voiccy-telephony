@@ -13,6 +13,8 @@ Instead of using docker, I am using multipass, it has no ports issue and gets DT
 same = n,Record(21032023.wav,5,5)
 -- here
 /usr/share/asterisk/sounds
+-- or here
+/var/lib/asterisk/sounds
 
 apt-get update -y
 apt-get upgrade -y
