@@ -31,10 +31,9 @@ ami.on("response", function (evt) {});
 ami.action(
   {
     action: "originate",
-    channel: "PJSIP/1000",
-    context: "voiccy",
-    callerId: "voiccy",
-    exten: 100,
+    channel: "SIP/0665638452@dinstar",
+    context: "apps",
+    exten: 200,
     priority: 1,
     variable: {
       name1: "value1",

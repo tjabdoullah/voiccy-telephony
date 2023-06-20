@@ -47,11 +47,11 @@ var handler = function (context) {
       );
 
       if (input.result == "1")
-        await streamAudio(context, "voiccy/one_of_our_agents_will_call_you_soon");
-      else if (input.result == "2") await streamAudio(context, "voiccy/optout_received");
+        await streamAudio(context, "voiccy/call_back_selected");
+      else if (input.result == "2") await streamAudio(context, "voiccy/opt_out_selected");
 
       console.log(input);
-      await streamAudio(context, "voiccy/thank_you_bye");
+      await streamAudio(context, "voiccy/thanks_have_a_good_day");
     })
     .then(function (result) {
       return context.end();
