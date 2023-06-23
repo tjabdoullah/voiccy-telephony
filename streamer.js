@@ -38,6 +38,11 @@ var handler = function (context) {
     .onEvent("variables")
     .then(async function (vars) {
       // var input = await context.recordFile("22032023", "wav", 5, 5);
+      
+
+      await streamAudio(context, "voiccy/edge_signup");
+
+
       var input = await getUserInput(
         context,
         "voiccy/greetings",
