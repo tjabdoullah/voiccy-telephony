@@ -1,3 +1,4 @@
+const number_to_call = "0665638452";
 /**
  * port:  port server
  * host: host server
@@ -31,7 +32,7 @@ ami.on("response", function (evt) {});
 ami.action(
   {
     action: "originate",
-    channel: "SIP/0665638452@dinstar",
+    channel: "SIP/" + number_to_call + "@dinstar",
     context: "apps",
     exten: 200,
     priority: 1,
