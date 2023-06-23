@@ -1,3 +1,4 @@
+const audio_to_stream = "amina";
 var AGIServer = require("ding-dong");
 
 var streamAudio = async function (context, filepath) {
@@ -37,10 +38,8 @@ var handler = function (context) {
   context
     .onEvent("variables")
     .then(async function (vars) {
+      await streamAudio(context, "voiccy/" + audio_to_stream);
       // var input = await context.recordFile("22032023", "wav", 5, 5);
-
-      await streamAudio(context, "voiccy/edge_signup");
-
       // var input = await getUserInput(
       //   context,
       //   "voiccy/greetings",
