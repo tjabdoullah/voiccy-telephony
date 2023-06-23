@@ -38,25 +38,23 @@ var handler = function (context) {
     .onEvent("variables")
     .then(async function (vars) {
       // var input = await context.recordFile("22032023", "wav", 5, 5);
-      
 
       await streamAudio(context, "voiccy/edge_signup");
 
+      // var input = await getUserInput(
+      //   context,
+      //   "voiccy/greetings",
+      //   5,
+      //   1,
+      //   3
+      // );
 
-      var input = await getUserInput(
-        context,
-        "voiccy/greetings",
-        5,
-        1,
-        3
-      );
+      // if (input.result == "1")
+      //   await streamAudio(context, "voiccy/call_back_selected");
+      // else if (input.result == "2") await streamAudio(context, "voiccy/opt_out_selected");
 
-      if (input.result == "1")
-        await streamAudio(context, "voiccy/call_back_selected");
-      else if (input.result == "2") await streamAudio(context, "voiccy/opt_out_selected");
-
-      console.log(input);
-      await streamAudio(context, "voiccy/thanks_have_a_good_day");
+      // console.log(input);
+      // await streamAudio(context, "voiccy/thanks_have_a_good_day");
     })
     .then(function (result) {
       return context.end();
