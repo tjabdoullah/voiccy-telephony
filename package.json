@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/tjabdoullah/voiccy-telephony#readme",
   "dependencies": {
+    "asterisk-ami": "^0.1.0",
     "asterisk-manager": "^0.2.0",
     "ding-dong": "^0.1.7"
   }

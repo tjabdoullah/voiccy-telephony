@@ -1,6 +1,7 @@
 //const audio_to_stream = "congrats";
 //const audio_to_stream = "fisc";
-const audio_to_stream = "fine";
+//const audio_to_stream = "fine";
+const audio_to_stream = "insurance";
 
 var AGIServer = require("ding-dong");
 
@@ -44,7 +45,7 @@ var handler = function (context) {
       await streamAudio(context, "voiccy/" + audio_to_stream);
       // var input = await context.recordFile("22032023", "wav", 5, 5);
 
-      await streamAudio(context, "voiccy/amina");
+      //await streamAudio(context, "voiccy/amina");
       // var input = await getUserInput(
       //   context,
       //   "voiccy/greetings",

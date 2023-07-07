@@ -1,3 +1,5 @@
 ## This could be the headache removed for installing Asterisk/DAHDI in one chot
 
 https://github.com/InterLinked1/phreakscript
+sudo /opt/asterisk-18.18.0/sbin/asterisk -rvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+
