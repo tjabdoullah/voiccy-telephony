@@ -2,4 +2,5 @@
 
 https://github.com/InterLinked1/phreakscript
 sudo /opt/asterisk-18.18.0/sbin/asterisk -rvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
-
+https://www.dinstar.com/WEB/files/13151/2018-06-05/Dinstar%20GSM%20Gateway%20HTTP%20API-v202011.pdf
+sudo cp voices/* /opt/asterisk-18.18.0/var/lib/asterisk/sounds/en/voiccy/
